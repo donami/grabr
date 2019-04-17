@@ -1,0 +1,56 @@
+/* Regular @import url statements work as you'd expect them to -- alternatively
+you can import locally, and they wind up in the resulting bundle */
+@import url('https://fonts.googleapis.com/css?family=Gentium+Basic');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: 0;
+  border: 0;
+  font-family: 'Poppins', serif;
+  font-size: 14px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+
+  > div {
+    height: 100%;
+  }
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes button-spin {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
